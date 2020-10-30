@@ -1,8 +1,5 @@
 var THREE = require("three");
-require("hammerjs")
-// import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
-// import Stats from 'three/examples/jsm/libs/stats.module.js';
-// import { GUI } from 'three/examples/jsm/libs/dat.gui.module.js';
+// require("hammerjs")
 import { RectAreaLightHelper } from 'three/examples/jsm/helpers/RectAreaLightHelper.js';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 
@@ -121,8 +118,8 @@ class Stage {
 
                         else if (child.name === "text") {
                             let material = new THREE.MeshLambertMaterial({
-                                color: 0xdddd00,
-                                emissive: 0xdddd00
+                                color: 0xcccc00,
+                                emissive: 0xcccc00
 
                             });
                             child.material = material;
@@ -410,10 +407,6 @@ class Stage {
 
         var hullLightBottomHelper3 = new RectAreaLightHelper(hullLightBottom3);
         // hullLightBottom3.add( hullLightBottomHelper3 );
-
-    }
-
-    move() {
 
     }
 }
