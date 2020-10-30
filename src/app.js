@@ -15,7 +15,6 @@ class Stage {
     constructor() {
         this.setupScene();
         this.setupLights();
-        this.makeInteractive();
 
     }
 
@@ -247,13 +246,13 @@ class Stage {
 
         this.cameraControls.update(this.controlClock.getDelta());
 
-        this.groundTexture.offset.x -= .0021;
+        this.groundTexture.offset.x -= 0.003465;
         this.ground.material.needsUpdate = true;
 
 
-        this.wheel1.rotation.y -= .031;
-        this.wheel2.rotation.y -= .031;
-        this.wheel3.rotation.y -= .031;
+        this.wheel1.rotation.y -= 0.05117;
+        this.wheel2.rotation.y -= 0.05117;
+        this.wheel3.rotation.y -= 0.05117;
 
 
         // this.control.update();
@@ -284,21 +283,6 @@ class Stage {
         this.scene.add(light);
     }
 
-    // library parts
-    makeInteractive() {
-        this.ham = new Hammer(this.view3D, {
-            domEvents: true,
-        });
-
-        this.ham.on("tap", e => {
-            this.onDocumentMouseClick(e);
-        });
-
-        this.raycaster = new THREE.Raycaster();
-        this.mouse = new THREE.Vector2();
-
-        this.clickableObjects = [];
-    }
 
     setupActionListener(object, type, callback) {
         if (type === "click") {
