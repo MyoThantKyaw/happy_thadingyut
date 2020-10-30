@@ -1,0 +1,137 @@
+@font-face {
+    font-family: "Pyidaungsu";
+    src: url("Pyidaungsu-2.5.3_Regular.ttf");
+}
+
+*, .ui.button{
+    font-family: "Pyidaungsu";
+    src: url("Pyidaungsu-2.5.3_Regular.ttf"); 
+}
+
+body{
+    margin: 0;
+    overflow: hidden;   
+}
+
+#btnClick{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    margin: 3px;
+}
+
+#topToolbar{
+    position: absolute;
+    top: 3px;
+    right: 0px;
+    height: 32px;
+    display : flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 4px;
+}
+
+#sideToolbar{
+    position: absolute;
+    top: 37px;
+    right : 0px;
+    width: 43px;
+    padding-top: 6px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#leftToolbar{
+    position: absolute;
+    top: 0px;
+    left : 0px;
+
+    padding-top: 4px;
+    padding-left: 4px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+#leftToolbar button{
+    margin-bottom: 3px;
+}
+
+.flexSpaceTaker{
+    flex-grow: 4;
+}
+
+#btnRealTime{    
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+#btnRealTime.active{
+    color: rgb(221, 221, 221) !important;
+}
+
+#btnSlowMotion.active{
+    color: rgb(221, 221, 221) !important;  
+}
+
+#btnSlowMotion{
+    border: none !important;
+    padding-left: 13px;
+    padding-right: 13px;
+
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+#sideToolbar button{
+    margin-bottom: 6px;
+}
+
+#btnHome{
+    margin-top: 10px;
+}
+
+#settingPanel{
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+}
+
+#settingPanel div{
+    margin-bottom: 6px;
+}
+
+#settingPanel div label{
+    color: rgb(195, 195, 195);
+    margin-left: 5px;
+}
+
+.ui.sidebar {    
+    background: #807a7ab8 !important;
+    
+    width: 180px !important;
+    height: auto !important;
+    border-radius: 4px !important;
+    margin: 5px !important;
+    margin-right: 44px !important;
+    padding: 6px 4px;
+    padding-bottom: 0;
+    overflow-y: scroll;
+    top : 161px;
+}
+
+div.mini.ui.buttons .or::before{
+    background: #b0b0b0;
+}
+
+#leftToolbar-row1{
+    display: flex;
+    flex-direction: row;
+}
+
+#btnSwitchVacuumPump{
+    padding: 5px 6px;
+}
